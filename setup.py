@@ -13,7 +13,8 @@ def get_requirements(file_path: str) -> List[str]:
 setup(
     name='mldl',
     version='0.1',
-    packages=find_packages(),
+    packages=find_packages(where='src'),
+    package_dir={'': 'src'},
     description="""ML/DL Accelerator""",
     url='https://github.com/juliusolaifa/mldl',
     author='Julius Olaifa',

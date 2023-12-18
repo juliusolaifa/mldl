@@ -1,6 +1,6 @@
 import sys
 
-from logger import logging
+from util.logger import logging
 
 class CustomException(Exception):
     def __init__(self, message: str, details: sys) -> None:
